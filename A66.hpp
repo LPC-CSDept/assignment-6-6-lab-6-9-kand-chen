@@ -25,16 +25,16 @@ int maxmin(int a, int b, int c, int &d, int &e)
     }
 
     if (a < b)
-        min = (a < c) ? a : c;
+        min1 = (a < c) ? a : c;
     else // a >= b
-        min = (b < c) ? b : c;
+        min1 = (b < c) ? b : c;
 
     if (a > b)
-        max = (a > c) ? a : c;
+        max1 = (a > c) ? a : c;
     else // a <= b
-        max = (b > c) ? b : c;
-    d = max;
-    e = min;
+        max1 = (b > c) ? b : c;
+    d = max1;
+    e = min1;
 
     return 0;
 }
